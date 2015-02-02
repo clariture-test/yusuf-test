@@ -1,0 +1,293 @@
+/* bootstrap.css overrides */
+
+.container				    			{ width: 1170px; margin: 0 auto 0 20px; } 
+
+div.section_header h2 {
+    float: left;
+    color: #FFFFFF;
+    background-color: #AAAAAA;
+    font-size: 1.4em;
+    font-weight: normal;
+    /*padding: 3px 6px 2px 6px;*/
+    margin: 10px 5px 5px 10px;
+
+    /*margin-top: 10px;
+    margin-bottom: 5px;*/
+}
+
+div.section_header h2 a {
+    color: #FFFFFF;
+    background-color: #AAAAAA;
+}
+
+/* h2 a:hover { text-decoration: underline; } */
+
+
+.select-info {
+    float: left;
+    padding: 2px 6px; 
+}
+
+button.close {
+    margin-left: 6px;
+    margin-right: 2px;
+}
+
+div.multiselect {
+    border: 1px solid gray;
+    width: 24em;
+    height: 20em;
+    padding: 2px;
+    overflow-y: scroll;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+tr.highlight {
+    color: white;
+    background-color: #3875D7;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input#filter::-ms-clear {
+    display: none;
+}
+
+td.nowrap_min {
+    width: 1px;
+    white-space: nowrap;
+}
+
+
+table#issues_table td:last-child {
+    padding: 1px !important;
+}
+
+
+
+/*
+ * Sign in stuff
+ */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+table.multiselect {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+table.multiselect tr td:first-child {
+    width: 14em;
+}
+
+/* hide column 3 and more
+ * for multi-select tables with coordinates
+ */
+
+table.multiselect tr td + td + td {
+    display: none;
+}
+
+table.multiselect tr td + td {
+    color: #CCCCCC;
+}
+
+
+
+
+
+
+
+
+table.check_summary {
+    color: #666666;
+    font-weight: bold;
+}
+
+table.compare_summary {
+    color: #666666;
+    font-weight: bold;
+}
+
+tr.check_spacer {
+    height: 10px;
+}
+
+tr.info {
+    color: #999999;
+    /*color: #0066ff;*/
+    /*color: #498AF3;*/
+    /*font-weight: bold;*/
+}
+
+tr.warning {
+    color: white;
+    background-color: #FF6600;
+    font-weight: bold;
+}
+
+tr.critical {
+    color: white;
+    background-color: #EE0000;
+    font-weight: bold;
+}
+
+td.ok,
+span.ok
+{
+    color: #006600;
+    font-weight: bold;
+}
+
+td.warning,
+span.warning
+{
+    color: #FF6600;
+    background-color: inherit !important;
+    font-weight: bold;
+}
+
+td.critical,
+span.critical
+{
+    color: #EE0000;
+    font-weight: bold;
+}
+
+td.warning_r {
+    color: white;
+    background-color: #FF6600;
+    font-weight: bold;
+}
+
+td.critical_r {
+    color: white;
+    background-color: #EE0000;
+    font-weight: bold;
+}
+
+td.check_no {
+    width: 50px;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-align: center;
+}
+
+td.check_title {
+    color: #222222;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+td.check_time {
+    color: #999999;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+table.check_summary td.check_no {
+    background-color: #315C93;
+}
+
+table.check_summary td.check_title {
+    background-color: #CED9E7;
+}
+
+table.check_summary td.check_time {
+    background-color: #CED9E7;
+}
+
+table.compare_summary td.check_no {
+    background-color: #31935C;
+}
+
+table.compare_summary td.check_title {
+    background-color: #CEE7D9;
+}
+
+td.check_title a { color: inherit; }
+td.check_title a:visited { color: inherit; }
+td.check_title a:hover { text-decoration: underline; }
+
+td.post {
+    /*color: #388E0F;*/
+    width: 3em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    color: #BBBBBB;
+    background-color: #FFFFFF;
+}
+
+td.pre {
+    /*color: #EE0000;*/
+    width: 3em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    color: #BBBBBB;
+    background-color: #FFFFFF;
+}
+
+td.degraded {
+    /*color: #388E0F;*/
+    width: 3em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    color: #FFFFFF;
+    background-color: #EE0000;
+}
+
+span.degraded {
+    /*color: #388E0F;*/
+    font-size: inherit;
+    font-weight: bold;
+    padding: 1px 20px;
+    color: #FFFFFF;
+    /*color: #EE0000;*/
+    background-color: #EE0000;
+}
+
+
